@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Basel Shrief | Portfolio</title>
+    <meta
+      name="description"
+      content="Basel Shrief — Professional Web Designer & Fullstack Developer. Projects, services, skills, and pricing."
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo" aria-label="Home">Basel<span> Shrief</span></a>
+
+      <nav class="navigation" id="primary-navigation">
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Mobile menu toggle -->
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <div id="scroll-progress"></div>
+
+    <!-- Hero -->
+    <section class="main" id="home">
+      <div class="hero-text">
+        <h2>Hello, I'm <span>Basel Shrief</span></h2>
+        <!-- Typing effect will target this h3 -->
+        <h3 id="typed-role" aria-live="polite">
+          Professional Web Designer & Fullstack Developer
+        </h3>
+
+        <a
+          href="Basel Shrief Resume.pdf"
+          class="main-btn"
+          download="BaselShrief-CV"
+        >
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+
+        <div class="social-icons" aria-label="Social links">
+          <a
+            href="https://www.linkedin.com/in/basel-shrief-178208288/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/basel.shrief/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/basel_shrief/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://github.com/basel-sh"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img
+          src="My Photo.jpg"
+          alt="Basel Shrief"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about" id="about">
+      <h2 class="title">About Me</h2>
+      <div class="about-container">
+        <div class="about-img">
+          <img
+            src="Images/ELectronicsBuilding.png"
+            alt="Electronics Building"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-text">
+          <h3>Hi, I'm <span>Basel Shrief</span></h3>
+          <p>
+            I’m a passionate <strong>Fullstack Developer</strong> with
+            experience in building modern, responsive, and scalable web
+            applications. I specialize in
+            <strong>Frontend frameworks (React, Vue)</strong> and
+            <strong>Backend systems (Node.js, MongoDB)</strong>. My mission is
+            to create seamless digital experiences that bring ideas to life.
+          </p>
+
+          <!-- Education Info -->
+          <div class="education">
+            <h4>🎓 Education</h4>
+            <ul>
+              <li><strong>Degree:</strong> Sophomore Engineering Student</li>
+              <li>
+                <strong>Major:</strong> Electronics & Communication Engineering
+              </li>
+              <li><strong>University:</strong> Cairo University</li>
+              <li><strong>Age:</strong> 20 Years</li>
+              <li><strong>GPA:</strong> 3.10</li>
+            </ul>
+          </div>
+
+          <a href="#projects" class="main-btn">Explore My Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="cards" id="services">
+      <h2 class="title">Services</h2>
+      <div class="content">
+        <div class="card">
+          <div class="icon"><i class="fas fa-code"></i></div>
+          <div class="info">
+            <h3>Frontend Development</h3>
+            <p>
+              HTML, CSS, JavaScript, React.js, Vue.js — Modern, responsive UI
+              designs.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fas fa-server"></i></div>
+          <div class="info">
+            <h3>Backend & Databases</h3>
+            <p>
+              Node.js, MongoDB, Railway, Vercel — Scalable server-side
+              solutions.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fas fa-paint-brush"></i></div>
+          <div class="info">
+            <h3>UI/UX Design</h3>
+            <p>
+              Beautiful, user-friendly designs that keep your users engaged.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <h2 class="title">My Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <p>HTML5</p>
+          <div class="progress"><span style="width: 95%"></span></div>
+        </div>
+        <div class="skill">
+          <p>CSS3</p>
+          <div class="progress"><span style="width: 90%"></span></div>
+        </div>
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="progress"><span style="width: 85%"></span></div>
+        </div>
+        <div class="skill">
+          <p>React.js</p>
+          <div class="progress"><span style="width: 88%"></span></div>
+        </div>
+        <div class="skill">
+          <p>Vue.js</p>
+          <div class="progress"><span style="width: 40%"></span></div>
+        </div>
+        <div class="skill">
+          <p>Node.js</p>
+          <div class="progress"><span style="width: 92%"></span></div>
+        </div>
+        <div class="skill">
+          <p>MongoDB</p>
+          <div class="progress"><span style="width: 85%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2 class="title">Projects</h2>
+      <div class="content">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Images/AIPhoto.png" alt="AI Doctor" loading="lazy" />
+            <div class="overlay">
+              <p>AI Doctor for Diagnosis - BreathTech</p>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/basel-sh/BreathTech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn"
+                  >View on GitHub</a
+                >
+                <a
+                  href="https://breathtech.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn"
+                  >Visit Website</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="Images/ExoPlanentsPhoto.png"
+              alt="ExoPlanets Discoverer"
+              loading="lazy"
+            />
+            <div class="overlay">
+              <p>3D Exoplanets Discoverer in our Galaxy</p>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/basel-sh/nasa-space-apps2024-czmd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn"
+                  >View on GitHub</a
+                >
+                <a
+                  href="https://exoplanets-discoverer.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn"
+                  >Visit Website</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <h2 class="title">Pricing Plans</h2>
+      <div class="content">
+        <div class="card price-card">
+          <h3>Basic</h3>
+          <p class="price">$20</p>
+          <ul>
+            <li>1 Page Website</li>
+            <li>Responsive Design</li>
+            <li>Basic SEO</li>
+          </ul>
+          <a href="#contact" class="main-btn">Choose Plan</a>
+        </div>
+        <div class="card price-card highlight">
+          <h3>Standard</h3>
+          <p class="price">$80</p>
+          <ul>
+            <li>Up to 5 Pages</li>
+            <li>Animations & Effects</li>
+            <li>SEO Optimized</li>
+          </ul>
+          <a href="#contact" class="main-btn">Choose Plan</a>
+        </div>
+        <div class="card price-card">
+          <h3>Premium</h3>
+          <p class="price">$100</p>
+          <ul>
+            <li>Unlimited Pages</li>
+            <li>Custom Features</li>
+            <li>Hosting & Support</li>
+          </ul>
+          <a href="#contact" class="main-btn">Choose Plan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="cards contact" id="contact">
+      <h2 class="title">Contact Me</h2>
+      <div class="content">
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="info">
+            <h3>Phone</h3>
+            <p><a href="tel:+201068506907">+20 1068506907</a></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="info">
+            <h3>Email</h3>
+            <p><a href="mailto:Baselshm@gmail.com">Baselshm@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Basel Shrief. All Rights Reserved.</p>
+      <div class="footer-socials">
+        <a
+          href="https://github.com/basel-sh"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/basel-shrief-178208288/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/basel_shrief/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+      const backToTop = document.getElementById("backToTop");
+      const menuToggle = document.getElementById("menuToggle");
+      const nav = document.getElementById("primary-navigation");
+
+      /* -------------------
+     Back-to-top + progress
+  -------------------- */
+      window.addEventListener("scroll", () => {
+        const scrollProgress = document.getElementById("scroll-progress");
+        const scrollTop = window.scrollY;
+        const docHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        scrollProgress.style.width = scrollPercent + "%";
+
+        backToTop.style.display = scrollTop > 200 ? "block" : "none";
+      });
+
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      /* -------------------
+     Mobile menu toggle
+  -------------------- */
+      menuToggle.addEventListener("click", () => {
+        const open = nav.classList.toggle("show");
+        menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+
+      nav
+        .querySelectorAll("a")
+        .forEach((a) =>
+          a.addEventListener("click", () => nav.classList.remove("show"))
+        );
+
+      /* -------------------
+     Typing effect
+  -------------------- */
+      (function typeHero() {
+        const el = document.getElementById("typed-role");
+        const phrases = [
+          "Professional Web Designer",
+          "Fullstack Developer",
+          "React • Node.js • MongoDB",
+        ];
+        let p = 0,
+          i = 0,
+          deleting = false;
+
+        function tick() {
+          const full = phrases[p];
+          i += deleting ? -1 : 1;
+          el.textContent = full.slice(0, i);
+
+          if (!deleting && i === full.length) {
+            deleting = true;
+            setTimeout(tick, 1200);
+            return;
+          }
+          if (deleting && i === 0) {
+            deleting = false;
+            p = (p + 1) % phrases.length;
+          }
+          setTimeout(tick, deleting ? 40 : 70);
+        }
+        tick();
+      })();
+
+      /* -------------------
+     Skill bar animation
+  -------------------- */
+      const skillSpans = document.querySelectorAll(".skills .progress span");
+      skillSpans.forEach((s) => {
+        s.dataset.targetWidth = s.style.width || "0%";
+        s.style.width = "0%";
+      });
+
+      const skillObserver = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const span = entry.target;
+              span.style.width = span.dataset.targetWidth;
+              obs.unobserve(span);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+      skillSpans.forEach((s) => skillObserver.observe(s));
+
+      /* -------------------
+     Reveal-on-scroll (fixed for hover bug)
+  -------------------- */
+      const revealTargets = document.querySelectorAll(
+        ".card, .project-card, .about-img img, .about-text, .price-card"
+      );
+
+      revealTargets.forEach((el) => el.classList.add("reveal"));
+
+      const revealObserver = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              const el = e.target;
+              el.classList.add("show");
+
+              // remove .reveal after animation so hover works fine
+              setTimeout(() => {
+                el.classList.remove("reveal");
+              }, 650);
+
+              obs.unobserve(el);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      revealTargets.forEach((el) => revealObserver.observe(el));
+
+      /* -------------------
+     Scrollspy (active nav link)
+  -------------------- */
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".navigation a");
+
+      const spy = () => {
+        let current = "";
+        const top = window.scrollY + 120; // header offset
+        sections.forEach((sec) => {
+          if (top >= sec.offsetTop && top < sec.offsetTop + sec.offsetHeight) {
+            current = "#" + sec.id;
+          }
+        });
+        navLinks.forEach((link) => {
+          link.classList.toggle(
+            "active",
+            link.getAttribute("href") === current
+          );
+        });
+      };
+
+      window.addEventListener("scroll", spy);
+      spy();
+    </script>
+  </body>
+</html>
