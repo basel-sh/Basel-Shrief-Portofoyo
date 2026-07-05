@@ -107,11 +107,11 @@ export default function Hero() {
           </MagneticButton>
           <MagneticButton>
             <a
-              href={profile.resumeEmbeddedHref}
+              href={profile.resumeGeneralHref}
               download
               className="flex items-center gap-2 rounded-full border border-border-strong px-7 py-3.5 text-sm font-semibold text-text-primary transition-colors hover:border-neon-blue hover:text-neon-blue"
             >
-              Download Resume
+              Download CV
             </a>
           </MagneticButton>
         </motion.div>

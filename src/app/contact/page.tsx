@@ -49,10 +49,10 @@ export default function ContactPage() {
     },
     {
       icon: <Download size={22} />,
-      title: "Download Resume",
-      description: "Embedded Systems-focused resume, PDF.",
+      title: "Download CV",
+      description: "General CV, PDF.",
       cta: "Download PDF",
-      href: profile.resumeEmbeddedHref,
+      href: profile.resumeGeneralHref,
       download: true,
     },
   ];

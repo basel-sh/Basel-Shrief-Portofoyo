@@ -39,7 +39,7 @@ export const projects: Project[] = [
     lessons:
       "Deepened experience coordinating two MCUs over shared I2C sensor buses and tuning wake-up strategies for battery-constrained embedded products.",
     tags: ["STM32", "ESP32", "I2C", "BLE", "Wearables", "Low Power", "Git"],
-    placeholder: "Put Smart Medical Watch Photo Here",
+    image: "/assets/images/embedded/smart-medical-watch.jpg",
     featured: true,
   },
   {
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     results:
       "Board fabricated and integrated into the Eco Racing team's race car motor-control subsystem.",
     tags: ["Altium", "PCB Design", "ESP32", "DRV8825", "Motor Control", "3-Phase"],
-    placeholder: "Put STM32 Motor Control PCB Image Here",
+    image: "/assets/images/embedded/motor-control-pcb-altium.jpg",
     featured: true,
   },
   {
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     results:
       "Deployed and tested live at the Qatar Shell Eco-marathon 2026, feeding the engineering team's trackside dashboard.",
     tags: ["ESP32", "STM32", "GPS", "MQTT", "HAL", "IoT", "Telemetry"],
-    placeholder: "Put Racing Telemetry Dashboard Screenshot Here",
+    image: "/assets/images/embedded/racing-telemetry-system.png",
     featured: true,
   },
   {
@@ -89,7 +89,7 @@ export const projects: Project[] = [
       "Built and programmed on the STM32 'Blue Pill' microcontroller using STM32CubeIDE, with sensor-driven closed-loop steering logic for real-time lane tracking.",
     results: "First Place, Line Follower Car Competition — Cairo University Eco Racing Team, Feb 2025.",
     tags: ["STM32", "STM32CubeIDE", "Autonomous Systems", "Control Loops"],
-    placeholder: "Put Line Follower Car Photo Here",
+    image: "/assets/images/embedded/automated-lane-follower.jpg",
   },
   {
     slug: "designing-multimeter",
@@ -103,7 +103,7 @@ export const projects: Project[] = [
       "Arduino-driven measurement circuit using operational amplifiers to condition and amplify signals for voltage, current, and ohmic resistance readings, laid out on a compact custom PCB.",
     results: "Achieved accuracy exceeding 95% against reference readings across all measured components.",
     tags: ["Arduino", "Op-Amps", "PCB Design", "Analog Circuits"],
-    placeholder: "Put Multimeter PCB Photo Here",
+    image: "/assets/images/embedded/designing-multimeter.jpg",
   },
 
   // ---------------- DIGITAL DESIGN ----------------
@@ -118,7 +118,7 @@ export const projects: Project[] = [
     architecture:
       "Complete single-cycle RISC-V datapath in Verilog: instruction fetch/decode, ALU, register file, control unit, and memory modules, with full instruction execution flow simulated in ModelSim and synthesized in Vivado.",
     tags: ["Verilog", "RISC-V", "RTL", "Datapath", "Control Unit", "Vivado", "ModelSim"],
-    placeholder: "Put RISC-V Processor Waveform/Vivado Screenshot Here",
+    image: "/assets/images/digital/risc-v-processor.png",
     featured: true,
   },
   {
@@ -132,7 +132,7 @@ export const projects: Project[] = [
     architecture:
       "Full 8-bit single-cycle datapath, control unit, and memory modules designed in VHDL, with instruction execution simulated in ModelSim and implemented in Vivado.",
     tags: ["VHDL", "Processor Design", "RTL", "ModelSim", "Vivado"],
-    placeholder: "Put 8-Bit Processor ModelSim Screenshot Here",
+    image: "/assets/images/digital/8-bit-processor.png",
     featured: true,
   },
   {
@@ -159,7 +159,7 @@ export const projects: Project[] = [
     architecture:
       "Analog injection-locked frequency divider and an E-TSPC digital divider, designed with NMOS/PMOS devices in Cadence Virtuoso and tuned for the best achievable bandwidth-to-power tradeoff.",
     tags: ["Cadence Virtuoso", "Analog IC Design", "Frequency Dividers", "NMOS/PMOS"],
-    placeholder: "Put Cadence Virtuoso Schematic Screenshot Here",
+    image: "/assets/images/digital/frequency-dividers-cadence.png",
   },
   {
     slug: "ldo-ota-cadence",

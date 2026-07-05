@@ -147,7 +147,7 @@ export default function Navbar() {
                 download
                 className="mt-6 flex shrink-0 items-center gap-2 rounded-full border border-neon-blue/50 px-6 py-3 text-sm font-medium text-neon-blue"
               >
-                <Download size={16} /> Download Resume
+                <Download size={16} /> Resume
               </motion.a>
             </motion.nav>
           </motion.div>
