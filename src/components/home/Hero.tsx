@@ -99,10 +99,10 @@ export default function Hero() {
         >
           <MagneticButton>
             <Link
-              href="/embedded"
+              href="/projects"
               className="glow-border relative flex items-center gap-2 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple px-7 py-3.5 text-sm font-semibold text-void shadow-[0_0_30px_rgba(46,211,255,0.3)] transition-transform"
             >
-              Explore Embedded Work
+              Explore My Work
             </Link>
           </MagneticButton>
           <MagneticButton>

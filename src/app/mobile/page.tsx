@@ -35,10 +35,7 @@ export default function MobilePage() {
           {mobileProjects.map((project, i) => (
             <Reveal key={project.slug} delay={i * 0.08}>
               <div className="flex flex-col items-center text-center">
-                <PhoneMockup
-                  placeholder={project.placeholder ?? `Put ${project.title} Screenshot Here`}
-                  alt={project.title}
-                />
+                <PhoneMockup label={project.subCategory ?? "Mobile App"} alt={project.title} />
                 <h3 className="font-display mt-6 text-lg font-semibold text-text-primary">
                   {project.title}
                 </h3>

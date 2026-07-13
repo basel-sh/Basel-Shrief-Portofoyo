@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "@/components/icons/BrandIcons";
 import GlassCard from "@/components/ui/GlassCard";
 import Badge from "@/components/ui/Badge";
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
+import ProjectVisual from "@/components/projects/ProjectVisual";
 import Reveal from "@/components/ui/Reveal";
 import type { Project } from "@/data/projects";
 
@@ -21,12 +21,7 @@ function Media({ project }: { project: Project }) {
       </div>
     );
   }
-  return (
-    <ImagePlaceholder
-      label={project.placeholder ?? `Put ${project.title} Photo Here`}
-      aspect="aspect-[16/10]"
-    />
-  );
+  return <ProjectVisual project={project} aspect="aspect-[16/10]" />;
 }
 
 export function ProjectCardDetailed({ project, index = 0 }: { project: Project; index?: number }) {

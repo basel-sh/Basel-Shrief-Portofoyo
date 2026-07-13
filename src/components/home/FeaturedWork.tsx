@@ -16,10 +16,10 @@ export default function FeaturedWork() {
           description="A sample of the embedded and digital-design projects driving real hardware — race cars, wearables, and custom ICs."
         />
         <Link
-          href="/embedded"
+          href="/projects"
           className="group flex shrink-0 items-center gap-1.5 text-sm font-medium text-neon-blue"
         >
-          View all embedded work
+          View all projects
           <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </Link>
       </div>

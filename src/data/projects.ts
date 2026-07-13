@@ -14,8 +14,6 @@ export interface Project {
   tags: string[];
   /** Path under /public — only set when a real image file exists on disk. */
   image?: string;
-  /** Shown via ImagePlaceholder when no real image is available yet. */
-  placeholder?: string;
   github?: string;
   demo?: string;
   featured?: boolean;
@@ -146,7 +144,6 @@ export const projects: Project[] = [
     architecture:
       "RTL modules implementing the I2C and UART protocol state machines and timing, simulated to validate correct framing, addressing, and data transfer behavior.",
     tags: ["Verilog", "I2C", "UART", "FSM", "RTL"],
-    placeholder: "Put I2C/UART Simulation Waveform Here",
   },
   {
     slug: "frequency-dividers-cadence",
@@ -172,7 +169,6 @@ export const projects: Project[] = [
     architecture:
       "LDO circuit with a voltage-controlled step potentiometer, designed and tuned in Cadence Virtuoso using NMOS/PMOS devices for the best constant-voltage output and power consumption.",
     tags: ["Cadence Virtuoso", "LDO", "OTA", "Analog IC Design"],
-    placeholder: "Put LDO/OTA Cadence Schematic Here",
   },
   {
     slug: "logic-gates-transistors",
@@ -185,7 +181,6 @@ export const projects: Project[] = [
     architecture:
       "Discrete-device abstraction of standard logic gates built from transistors, MOSFETs, and diodes, composed into a working 2-bit binary adder/subtractor circuit.",
     tags: ["Transistors", "MOSFETs", "Logic Gates", "Digital Electronics"],
-    placeholder: "Put Transistor Logic Gates Breadboard Photo Here",
   },
 
   // ---------------- WEB ----------------
@@ -195,9 +190,8 @@ export const projects: Project[] = [
     title: "Personal Engineering Portfolio",
     period: "Aug 2025 — rebuilt 2026",
     summary:
-      "This site — a Next.js, TypeScript, and Framer Motion/GSAP/Three.js portfolio built to showcase embedded and digital design work.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js"],
-    placeholder: "Put Portfolio Website Screenshot Here",
+      "This site — a Next.js, TypeScript, and Framer Motion portfolio built to showcase embedded and digital design work.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/basel-sh",
   },
   {
@@ -234,7 +228,6 @@ export const projects: Project[] = [
     summary:
       "Flutter mobile app connectivity built to pair with the Sparrow embedded system's ESP-based hardware over BLE.",
     tags: ["Flutter", "BLE", "ESP32", "Mobile Connectivity"],
-    placeholder: "Put Sparrow App Screenshot Here",
   },
   {
     slug: "medical-watch-companion-app",
@@ -244,7 +237,6 @@ export const projects: Project[] = [
     summary:
       "Mobile app pairing for the STM32/ESP32 smart medical watch, streaming live vitals over BLE for real-time viewing.",
     tags: ["BLE", "Wearables", "Mobile", "Real-Time Data"],
-    placeholder: "Put Medical Watch App Screenshot Here",
   },
 ];
 

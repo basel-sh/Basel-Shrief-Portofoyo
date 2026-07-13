@@ -85,11 +85,11 @@ export default function Navbar() {
 
           <div className="hidden items-center gap-3 lg:flex">
             <a
-              href={profile.resumeEmbeddedHref}
+              href={profile.resumeGeneralHref}
               download
               className="flex items-center gap-2 rounded-full border border-border-strong px-4 py-2 text-sm font-medium text-text-primary transition-colors hover:border-neon-blue hover:text-neon-blue"
             >
-              <Download size={15} /> Resume
+              <Download size={15} /> CV
             </a>
           </div>
 
@@ -143,11 +143,11 @@ export default function Navbar() {
               })}
               <motion.a
                 variants={{ closed: { opacity: 0, y: 16 }, open: { opacity: 1, y: 0 } }}
-                href={profile.resumeEmbeddedHref}
+                href={profile.resumeGeneralHref}
                 download
                 className="mt-6 flex shrink-0 items-center gap-2 rounded-full border border-neon-blue/50 px-6 py-3 text-sm font-medium text-neon-blue"
               >
-                <Download size={16} /> Resume
+                <Download size={16} /> CV
               </motion.a>
             </motion.nav>
           </motion.div>

@@ -22,11 +22,7 @@ export const achievements: Achievement[] = [
     country: "Poland",
     description:
       "Traveled to Poland to represent Egypt internationally at the Shell Eco-marathon, competing against university teams from around the world. Contributed the embedded telemetry and RTOS systems that helped the team place TOP 10 worldwide.",
-    galleryPlaceholders: [
-      "Put Poland Ceremony Photo Here",
-      "Put Poland Team Photo Here",
-      "Put Poland Race Car Photo Here",
-    ],
+    galleryPlaceholders: ["Award Ceremony", "Eco Racing Team", "Race Car"],
     certificate: "/assets/documents/certificates/Poland2026_ShellEcoMarathon.pdf",
   },
   {
@@ -38,11 +34,7 @@ export const achievements: Achievement[] = [
     country: "Qatar",
     description:
       "Traveled to Qatar to represent Egypt at the Shell Eco-marathon MENA regional finals. Built and field-tested the car's telemetry system — GPS, IMU, and MQTT dashboard — live at the event, helping the team secure 1st place in the MENA region and 4th globally.",
-    galleryPlaceholders: [
-      "Put Qatar Ceremony Photo Here",
-      "Put Qatar Group Photo Here",
-      "Put Qatar Race Car Photo Here",
-    ],
+    galleryPlaceholders: ["Award Ceremony", "Team Photo", "Race Car"],
     certificate: "/assets/documents/certificates/Qatar2026_ShellEcoMarathon.pdf",
   },
   {

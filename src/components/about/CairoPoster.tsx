@@ -8,7 +8,7 @@ export default function CairoPoster() {
       <div className="relative mx-6 mt-28 overflow-hidden rounded-[2rem] border border-border-subtle sm:mx-10 sm:rounded-[3rem] lg:mx-auto lg:max-w-6xl">
         <div className="relative aspect-[16/10] w-full sm:aspect-[21/9]">
           <Image
-            src="/assets/images/university/cairo-university-engineering.png"
+            src="/assets/images/university/cairo-university-engineering.jpg"
             alt="Faculty of Engineering, Cairo University — Electronics Building"
             fill
             priority
