@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FileText } from "lucide-react";
 import GlassCard from "@/components/ui/GlassCard";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
@@ -57,11 +58,26 @@ export default function CountrySpotlight({
           {achievement.description}
         </p>
 
-        {achievement.galleryPlaceholders && (
+        {achievement.galleryPhotos && (
           <div className="mt-6 grid grid-cols-3 gap-3">
-            {achievement.galleryPlaceholders.map((label) => (
-              <ImagePlaceholder key={label} label={label} aspect="aspect-square" />
-            ))}
+            {achievement.galleryPhotos.map((photo) =>
+              photo.src ? (
+                <div
+                  key={photo.label}
+                  className="relative aspect-square w-full overflow-hidden rounded-2xl border border-border-subtle"
+                >
+                  <Image
+                    src={photo.src}
+                    alt={photo.label}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 33vw, 200px"
+                  />
+                </div>
+              ) : (
+                <ImagePlaceholder key={photo.label} label={photo.label} aspect="aspect-square" />
+              )
+            )}
           </div>
         )}
 

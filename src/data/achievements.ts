@@ -1,3 +1,9 @@
+export interface GalleryPhoto {
+  label: string;
+  /** Path under /public — omit while the real photo hasn't been supplied yet. */
+  src?: string;
+}
+
 export interface Achievement {
   slug: string;
   title: string;
@@ -6,8 +12,7 @@ export interface Achievement {
   period: string;
   country?: "Poland" | "Qatar" | "Egypt";
   description: string;
-  /** Placeholder labels for photos not yet supplied — swap for real <Image> once files exist. */
-  galleryPlaceholders?: string[];
+  galleryPhotos?: GalleryPhoto[];
   image?: string;
   certificate?: string;
 }
@@ -22,7 +27,11 @@ export const achievements: Achievement[] = [
     country: "Poland",
     description:
       "Traveled to Poland to represent Egypt internationally at the Shell Eco-marathon, competing against university teams from around the world. Contributed the embedded telemetry and RTOS systems that helped the team place TOP 10 worldwide.",
-    galleryPlaceholders: ["Award Ceremony", "Eco Racing Team", "Race Car"],
+    galleryPhotos: [
+      { label: "Award Ceremony", src: "/assets/images/competitions/poland-award-ceremony.jpg" },
+      { label: "Eco Racing Team", src: "/assets/images/competitions/poland-eco-racing-team.jpg" },
+      { label: "Race Car", src: "/assets/images/competitions/poland-race-car.jpg" },
+    ],
     certificate: "/assets/documents/certificates/Poland2026_ShellEcoMarathon.pdf",
   },
   {
@@ -34,7 +43,11 @@ export const achievements: Achievement[] = [
     country: "Qatar",
     description:
       "Traveled to Qatar to represent Egypt at the Shell Eco-marathon MENA regional finals. Built and field-tested the car's telemetry system — GPS, IMU, and MQTT dashboard — live at the event, helping the team secure 1st place in the MENA region and 4th globally.",
-    galleryPlaceholders: ["Award Ceremony", "Team Photo", "Race Car"],
+    galleryPhotos: [
+      { label: "Award Ceremony", src: "/assets/images/competitions/qatar-award-ceremony.jpg" },
+      { label: "Team Photo", src: "/assets/images/competitions/qatar-team-photo.jpg" },
+      { label: "Race Car", src: "/assets/images/competitions/qatar-race-car.jpg" },
+    ],
     certificate: "/assets/documents/certificates/Qatar2026_ShellEcoMarathon.pdf",
   },
   {
