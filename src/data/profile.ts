@@ -27,7 +27,7 @@ export const profile = {
     location: "Cairo, Egypt",
     degree: "B.Sc. in Electronics and Communication Engineering",
     period: "Sep 2023 – Expected 2028",
-    gpa: "3.02 / 4.00 (Very Good)",
+    gpa: "2.8 / 4.00 (Very Good)",
     focus:
       "Specialized in designing ICs and software to global embedded coding standards, with hands-on experience developing STM32-based systems for real-world automotive and telemetry applications.",
   },
